@@ -2,9 +2,7 @@ def networkFF_ming(Nin,Tlen,dt,Ls,deltaS,w,plotflag = False):
 
 ## Model of a feed-forward summing network in the auditory pathway
 #   simulating the convergence of peripheral recepter neurons to a central neuron
-# --- MSc Course Computational Neuroscience - Biophysical Modeling 
-#     in Winter Semester 2023/24 
-#
+
 # - Input: 
 #  Nin    number of receptor input neurons converging to the central neuron(assume each side is equal )
 #  Tlen   total simulated time length [ms]
