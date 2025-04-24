@@ -1,9 +1,6 @@
 def HHmodel2(Iext,dt,GNa,GK,ENa,EK,plotflag = False):
 
 ## Hodgkin-Huxley model 
-# --- MSc Course Computational Neuroscience - Biophysical Modeling 
-#     in Winter Semester 2023/24 
-#
 # - Input: 
 #  Iext : external input vector [pA] 
 #  dt : time step [ms] 
@@ -30,18 +27,6 @@ def HHmodel2(Iext,dt,GNa,GK,ENa,EK,plotflag = False):
 
 ## flag for plotting
 #    plotflag = False  # True:plot, False:no plot 
-
-
-## activation and inactivation functions that are called internally
-# v : membrane potential [mV]
-# vr : reference potential [mV]
-# *** Notes ***
-# For historical reasons, the voltage of the HH activation/inactivation 
-# functions are measured from the resting (reference) potential. 
-# This is why the equations have the term (v-vr) that converts the 
-# absolute potential value into the one measured from the reference. 
-# In this code, the reference potenrial vr is fixed to -65 mV, but 
-# it can be other values that are reasonable for the resting potential.
 
 # transition rate functions
     def alphaM(v): 
